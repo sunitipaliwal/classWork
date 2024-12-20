@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo elements</title>
+    <style>
+        *{
+            margin:0;padding:0;box-sizing: border-box;
+        }
+        p::first-letter{
+            font-size: larger; color:blueviolet
+        }
+        p::after{
+            padding: 5px 15px;
+            content: 'read more'; color:brown;
+            background-color: aqua; border-radius: 20px;
+        }
+        p::first-line{
+            text-decoration: underline;
+        }
+        ul{
+            display: flex; list-style: none;
+        }
+        ul li{
+            margin: 0 20px; border-right: 1px solid black;
+            padding-right: 30px;
+        }
+        ul li a{
+            text-decoration: none; color: brown;
+        }
+        ul li a:hover{
+            color:red;
+        }
+        ul li a:active{color:aqua;}
+        ul li:nth-child(4){
+            border-right: none;
+            padding-right: 0;
+        }
+
+    </style>
+</head>
+<body>
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, aperiam? Iusto, laudantium corrupti quo excepturi facere, delectus sed praesentium maiores recusandae ipsam totam nihil repellat, aperiam blanditiis. Fugit libero, deserunt dolorum dolores dignissimos necessitatibus tenetur rem placeat saepe quam vitae.
+  </p>  
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, soluta?</p>
+  <br>
+  <br>
+  <ul>
+    <li> <a href="">home</a></li>
+    <li><a href="">about us</a></li>
+    <li><a href="">courses</a></li>
+    <li><a href="">contact</a></li>
+  </ul>
+</body>
+</html>

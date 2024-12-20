@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASIC HTML PAGE</title>
+</head>
+<style>
+   
+        h1{
+            font-style: inherit;
+            color: black;
+            text-align: center;
+            background-color: rgb(250, 230, 205);
+        }
+       form{
+        background-color: whitesmoke;
+        text-align: justify;
+       }
+       #branch{
+        background-color: whitesmoke;
+       }
+     #logo{
+        background-color: azure;
+     }
+</style>
+<body>
+    <a href="lab3.html">click here to open Catalogue page</a>
+    <a href="LAB33.HTML">click here to open registration  page</a>
+    <table border="1">
+        <tr>
+        <td id="logo">    <img src="abes.jpeg" height="50px" alt="abes logo">
+        </td>
+        <td>    <h1>
+            <center> ABES ENGINEERING COLLEGE</center>
+        </h1>
+        </td>
+        </tr>
+        <tr> 
+            <td id="branch">
+                <h3>Branches</h3>
+                 <ul>
+                    <li>CSE</li>
+                    <li>IT</li>
+                    <li>ECE</li>
+                    <li>EN</li>
+                    <li>ME</li>
+                 </ul> 
+            </td>
+            <td>
+               
+    <h1><b>REGISTRATION FORM</b></h1>
+    <form action="/contactn">
+        <label for="email"> Name:</label>
+        <input type="text" id="email" placeholder="Suniti" ><br><br>
+        Password:<input type="password" placeholder="suniti875"> <br><br>
+        
+        Email:<input type="email" placeholder="sunitipaliwal@gmail.com"><br><br>
+
+        Phone no: <input type="number" placeholder="987648374"><br><br>
+        <lable for="gender">Gender:</lable>
+        <lable>Female: </lable> <input type="radio" name="gender"  value="female">
+        <label>male:</label>
+        
+        <input type="radio" name ="gender" value="male"><br><br>
+        Date of birth:<input type="date" ><br><br>
+        <lable for="language" >Language known:</lable>
+        <select name="language" id="language">
+           
+            <option value="English">English</option>
+            <option value="hindi">Hindi</option>
+            <option value="tamil">Tamil</option>
+            <option value="telugu">Telugu</option>
+    
+          </select><br><br>
+          <lable for="language" >Address:</lable>
+          <textarea for="email"  placeholder="437,Lakhanpur Vikas Nagar" ></textarea>
+          <br><br>
+
+        
+         <input type="submit">
+         <input type="reset">
+         <br>
+         <br>
+         <label>Optional subjects:</label>
+         <input type="checkbox" checked>CoA
+         <input type="checkbox" >DE
+         <input type="checkbox" >FSD
+         <input type="checkbox" >DSA
+         <br>
+         <br>
+
+         <label>Your File:</label>
+         <input type="file">
+         </form>
+            </td>
+        </tr>
+    </table>
+
+    </body>
+</html>
